@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #90bf48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 950px;
+    background-color: #b49090;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    color: red;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #9c1717;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+.select-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+select {
+    width: 48%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #495057;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+select:focus {
+    border-color: #00b4d8;
+    background-color: #f1f3f5;
+}
+
+select:hover {
+    border-color: #00b4d8;
+    cursor: pointer;
+}
+.chart-container {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.loading {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+}
+button {
+    gap: 12px;
+    margin-top: 12px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #0077b6;
+    transform: translateY(-2px);
+}
+button:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
